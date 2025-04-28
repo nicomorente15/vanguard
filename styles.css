@@ -95,21 +95,55 @@ h1{
     padding-left: 10px;
 }
 
-nav{
-    display: inline;
+/* Nav */
+.nav {
+    position: relative;
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
 }
 
-nav ul li{
-    float: right;
-    width: 30%;
-    padding: 5px;
-    text-align: center;
+.hamburger {
+    font-size: 30px;
+    color: #EAEAEA;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 70px;
 }
 
-nav ul li a{
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    top: 100%;
+    right: 0;
+    width: 100px;
+    z-index: 1000;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
     color: #007BFF;
+    background-color: #000000;
 }
+
+.nav-menu li a:hover {
+    background-color: #333333;
+}
+
+.nav:hover .nav-menu,
+.hamburger:hover + .nav-menu {
+    display: block;
+}
+
+
 
 main{
     width: 340px;
@@ -148,7 +182,7 @@ main{
 }
 
 
-.firstContainer,.secondContainer, .thridContainer, .fourthContainer, .fifthContainer{
+.firstContainer,.secondContainer, .thirdContainer, .fourthContainer, .fifthContainer{
     padding: 20px 5px 10px 10px;
     width: 305px;
 }
@@ -196,28 +230,47 @@ main{
 }
 
 /* thridContainer */
-.thridContainer{
+.thirdContainer{
     background-color: #007BFF;
     color: #EAEAEA;
 }
 
-.thridContainer h2{
+.thirdContainer h2{
     font-size: 1.3em;
     font-weight: 600;
     padding: 20px 10px 20px 10px;
 }
 
-.thridContainer p{
+.thirdContainer p{
     font-size: 11px;
 }
 
-.thridContainer h3{
+.thirdContainer h3{
     font-size: 1.3em;
     font-weight: 600;
     padding: 10px 10px 20px 0;
 }
 
+.thirdContainer table{
+    width: 280px;
+    text-align: center;
+    font-size: 11px;
+}
 
+table, th, tr, td{
+    border: 1px solid #333333;
+    border-collapse: collapse;
+    padding: 1em 1.5em;
+
+}
+
+th, tr:nth-child(even){
+    background-color: #000000;
+}
+
+tr:nth-child(odd){
+    background-color: #333333;
+}
 
 
 /* fourthContainer */
@@ -263,7 +316,7 @@ form label{
 }
 
 form input{
-    width: 100%;
+    width: 290px;
     height: 25px;
     margin-bottom: 10px;
 }
@@ -277,7 +330,7 @@ form input#help{
 }
 
 .fifthContainer input.button{
-    width: 100%;
+    width: 300px;
     height: 40px;
     border-radius: 5px;
     font-size: .9em;
@@ -291,16 +344,13 @@ form input#help{
 footer{
     background-color: #000000;
     color: #EAEAEA;
+    padding: 20px 0;
 }
 
 footer .container p{
     font-size: 10px;
     text-align: center;
     
-}
-
-footer .container p.top{
-    padding-top: 10px;
 }
 
 
