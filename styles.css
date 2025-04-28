@@ -464,6 +464,128 @@ img {
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px){
     
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding-left: 300px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex; 
+        justify-content: space-around;
+        width: auto; 
+        position: static;
+        background-color: transparent; 
+        margin: 0; 
+    
+    }
+
+    .nav-menu li {
+        list-style: none;
+    }
+
+    .nav-menu li a {
+        padding: 10px 15px;
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    .nav-menu li a:hover {
+        background-color: #333333;
+        display: none;
+    }
+
+    /* Inov*/
+    .inov h2{
+        padding-top: 320px;
+    }
+
+    .inov p{
+        font-size: 17.8px;
+        padding: 0 20px;
+    }
+
+    .inov button{
+        width: 270px;
+        margin-top: 10px;
+        font-size: 1.4em;
+    }
+
+    /* 1st con*/
+    .firstContainer h2,.secondContainer h2,.thirdContainer h2, .thirdContainer h3, .fourthContainer h2, .fifthContainer h2{
+        font-size: 1.8em;
+    }
+
+    .firstContainer p{
+        font-size: 15px;
+    }
+    
+    /* 2nd con */
+    .secondContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        padding-bottom: 50px;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .secondContainer > div{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .secondContainer h2{
+        grid-column: span 2;
+    }
+
+    .secondContainer .container h3{
+        line-height: 1.5;
+        font-size: 23px;
+        width: 80%;
+    }
+
+    .secondContainer .container p{
+        font-size: 18px;
+    }
+
+    .secondContainer .container{
+        height: 180px;
+        margin-top: 0;
+    }
+
+    .secondContainer > div:nth-child(n+6){
+        height: 220px;
+    }
+
+
+    /* 3rd con */
+    .thirdContainer{
+        width: 817px;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 20px;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+
+    .thirdContainer > div{
+        box-sizing: border-box;
+    }
+
+    
+
+    /* */
 
     #results {
         grid-template-columns: 1fr 1fr;
