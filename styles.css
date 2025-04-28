@@ -81,7 +81,7 @@ header{
     height: 90px;
     width: 316.8px;
     padding: 10px 10px 5px 10px;
-    box-shadow: 1px 5px 5px #007BFF;
+    box-shadow: 0 5px 5px #007BFF;
 }
 
 header img{
@@ -149,8 +149,8 @@ main{
 
 
 .firstContainer,.secondContainer, .thridContainer, .fourthContainer, .fifthContainer{
-    padding: 30px 5px 10px 10px;
-    width: 280px;
+    padding: 20px 5px 10px 10px;
+    width: 305px;
 }
 
 /* firstContainer */
@@ -188,11 +188,11 @@ main{
 .secondContainer .container h3{
     font-size: 14px;
     font-weight: 600;
-    padding: 25px 0 10px 10px;
+    padding: 20px 0 10px 10px;
 }
 
 .secondContainer .container p{
-    font-size: 11px;
+    font-size: 10.5px;
 }
 
 /* thridContainer */
@@ -201,11 +201,39 @@ main{
     color: #EAEAEA;
 }
 
+.thridContainer h2{
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 20px 10px 20px 10px;
+}
+
+.thridContainer p{
+    font-size: 11px;
+}
+
+.thridContainer h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 10px 20px 0;
+}
+
+
+
+
 /* fourthContainer */
 .fourthContainer{
     background-color: #007BFF;
     color: #EAEAEA;
     width: 100%;
+}
+.fourthContainer{
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.fourthContainer #bar-chart{
+    padding: 0;
+    padding-bottom: 10px;
 }
 
 .fourthContainer #bar-chart .bar{
@@ -219,21 +247,68 @@ main{
     color: #EAEAEA;
 }
 
+.fifthContainer h2{
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 10px 20px 10px;
+}
+
+.fifthContainer p{
+    font-size: 11.5px;
+    padding-bottom: 10px;
+}
+
+form label{
+    font-size: 10px;
+}
+
+form input{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+form input#help{
+    height: 100px;
+}
+
+.fifthContainer input{
+    border: 2px solid #007BFF;
+}
+
 .fifthContainer input.button{
-    width: 170px;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     border-radius: 5px;
     font-size: .9em;
-    font-weight: 590;
+    font-weight: 600;
     background-color: #007BFF;
     color: #EAEAEA;
     border: none;
+    margin-top: 20px;
 }
 /* footer */
 footer{
     background-color: #000000;
     color: #EAEAEA;
 }
+
+footer .container p{
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+footer .container p.top{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 @media screen and (min-width: 400px){
