@@ -131,22 +131,34 @@
             <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
             <form>
-                <label for="fullName">Full Name</label><br>
-                <input type="text" id="fullName" name="fullName">
+                <div class="lineBox">
+                    <label for="fullName">Full Name</label><br>
+                    <input type="text" id="fullName" name="fullName">
+                </div>   
+                
+                <div class="lineBox">
+                    <label for="eMail">Email Address</label>
+                    <input type="email" id="eMail" name="eMail">
+                </div>
 
-                <label for="eMail">Email Address</label>
-                <input type="email" id="eMail" name="eMail">
-                
-                <label for="compName">Company Name</label>
-                <input type="text" id="compName" name="compName">
-                
-                <label for="industry">Industry</label>
-                <input type="text" id="industry" name="industry">
-                
-                <label for="help">How can we help you?</label>
-                <input type="text" id="help" name="help">
-                
-                <input type="submit" value="Submit" class="button">
+                <div class="lineBox">
+                    <label for="compName">Company Name</label>
+                    <input type="text" id="compName" name="compName">
+                </div>
+
+                <div class="industry">
+                    <label for="industry">Industry</label>
+                    <input type="text" id="industry" name="industry">
+                </div>   
+
+                <div class="help">
+                    <label for="help">How can we help you?</label>
+                    <input type="text" id="help" name="help">
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Submit" class="button">
+                </div>
             </form>
         </div>
     </main>
